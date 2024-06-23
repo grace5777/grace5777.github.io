@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Rate This Spot</title>
+    <link rel = "stylesheet" href = "style.css" type = "text/CSS">
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "header">
+            <img src = "https://i.pinimg.com/originals/a2/17/40/a21740a7b0f6b96a92e4805c8df8aa7e.jpg" alt = "Logo" class = "logo">
+            <h1>Rate This Spot</h1>
+        </div>
+        <div class = "nav-button">
+            <button id = "friendsBtn">Friends</button>
+            <button id = "accountBtn">Account</button>
+            <button id = "settingsBtn">Settings</button>
+        </div>
+        <div class = "dashboard">
+            <h2>Dashboard</h2>
+            <div id = "locations">
+                <p>The dashboard is currently empty</p>
+            </div>
+            <button id = "viewAllBtn">View all saved spots</button>
+            <button id = "addLocationBtn">Create a new spot</button>
+        </div>
+    
+        <input type = "file" id = "imageInput" accept = "image/*" style = "display:none">
+        <div id = "locationForm" class = "hidden">
+            <h2>Create A Spot</h2>
+            <button id = "uploadImageBtn">Upload image</button>
+            <lable for = "locationName">Spot name:</lable>
+            <input type = "text" id = "locationName">
+            <label for = "location rating">Rating:</label>
+            <div id = "starRating">
+                <span data-rating = "1">&#9733</span>
+                <span data-rating = "2">&#9733</span>
+                <span data-rating = "3">&#9733</span>
+                <span data-rating = "4">&#9733</span>
+                <span data-rating = "5">&#9733</span>
+            </div>
+            <label for = "locationReview">Review</label>
+            <textArea id = "locationReview"></textArea>
+            <button id = "cancelLocationBtn">Return to dashboard</button>
+        </div>
+
+        <div id = "fullReview" class = "hidden">
+            <h2 id = "fullReviewName"></h2>
+            <img id = "fullReviewImage" src = "" alt = "Location Image">
+            <p id = "fullReviewRating"></p>
+            <p id = "fullReviewText"></p>
+            <button id = "backToDashboardBtn">Back To Dashboard</button>
+        </div>
+    </div>
+</body>
+</html>
