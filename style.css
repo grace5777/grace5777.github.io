@@ -1,0 +1,110 @@
+body {
+    font-family: Arial;
+    background-color: #9acfdb;
+    color: #071818;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: #c98eba;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+h1 {
+    color: #F5F7F7;
+}
+
+.nav-buttons {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    color: #000407;
+    background-color: #a698cf;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #877bac;
+}
+
+.dashboard {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #a698cf;
+}
+
+.hidden {
+    display: none;
+}
+
+#locations {
+    color: #000407;
+    background-color: #F5F7F7;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.location img {
+    display: block;
+    max-width: 100px;
+}
+
+#starRating {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+#starRating span {
+    font-size: 2em;
+    color: #a698cf;
+    cursor: pointer;
+}
+
+#starRating span:hover,
+#starRating span.selected,
+#starRating span.highlighted {
+    color: #877bac;
+}
+
+#fullReview img {
+    max-width: 100%;
+}
